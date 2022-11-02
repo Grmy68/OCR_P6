@@ -1,6 +1,7 @@
 const bcrypt = require('bcrypt'); //Install bcrypt
 const jwt = require('jsonwebtoken'); //Install jsonwebtoken
 const User = require('../models/User'); //Import User.schema from models
+require('dotenv').config();
 
 
 
@@ -37,7 +38,7 @@ exports.login = (req, res, next) => {
                         userId: user._id,
                         token: jwt.sign(
                             { userId: user._id }, //Attribution new token for id user
-                            'RANDOM_TOKEN_SECRET',
+                            process.env.TOKEN,
                             { expiresIn: '24h' } //time limit token is valid (hours)
                         )
                     });
