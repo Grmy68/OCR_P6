@@ -7,10 +7,13 @@ const sauceRoutes = require('./routes/sauce');
 const app = express();
 const path = require('path');
 require('dotenv').config();
+const morgan = require('morgan')
+
+morgan('dev')
 
 
 //MongoDB Connection
-mongoose.connect(process.env.URL_DB_CONNECT, //URL_DB_CONNECT dotenv
+mongoose.connect(process.env.URL_DB_CONNECT, //URL_DB_CONNECT dotenv 
   { useNewUrlParser: true,
     useUnifiedTopology: true })
   .then(() => console.log('Connexion à MongoDB réussie !'))
