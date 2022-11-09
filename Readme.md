@@ -39,7 +39,7 @@ leurs sauces préférées et liker ou disliker les sauces ajoutées par les autr
 
 <h3>Connexion à MongoDB:</h3>
 Sur le cloud de MondoDB, créer un nouveau projet. Pour ce dernier créer également un Cluster, créer un utilisateur d'accès  ainsi que les droits d'accès IP (0.0.0.0 pour un accès depuis n'importe quel poste) puis copier le lien mongodb+srv:// d'affiliation.
-Dans le fichier .env du code, coller l'entièreté du lien à la variable <em>URL_DB_CONNECT</em>. La ligne devrait ressembler à ceci:<br> <em>URL_DB_CONNECT = mongodb+srv://idCluster:passwordCluster@p6oc.1jn1loe.mongodb.net/?retryWrites=true&w=majority</</em><br> Remplacer les parties idCluster et passwordCluster par les identifiants créés précédemment.
+Dans le fichier .env du code, coller l'entièreté du lien à la variable <em>URL_DB_CONNECT</em>. La ligne devrait ressembler à ceci:<br> <em>URL_DB_CONNECT = mongodb+srv://idCluster:passwordCluster@p6oc.1jn1loe.mongodb.net/?retryWrites=true&w=majority</em> <br> Remplacer les parties idCluster et passwordCluster par les identifiants créés précédemment.
 
 <h3>Démarrage du frontend:</h3>
 Depuis le code, ouvrir un nouveau terminal, se rendre dans le dossier frontend avec <em>cd frontend</em> puis lancer le ng serve avec la commande <em>npm start</em> enregistrée dans le fichier package.json du frontend <br>
