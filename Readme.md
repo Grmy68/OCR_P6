@@ -20,27 +20,27 @@ leurs sauces préférées et liker ou disliker les sauces ajoutées par les autr
 
 
 <h3>Exigences de sécurité:</h3>
-• Le mot de passe de l'utilisateur doit être haché.
-• L'authentification doit être renforcée sur toutes les routes sauce requises.
+• Le mot de passe de l'utilisateur doit être haché.<br>
+• L'authentification doit être renforcée sur toutes les routes sauce requises.<br>
 • Les adresses électroniques dans la base de données sont uniques et un
   plugin Mongoose approprié est utilisé pour garantir leur unicité et signaler
-  les erreurs.
+  les erreurs.<br>
 • La sécurité de la base de données MongoDB (à partir d'un service tel que
   MongoDB Atlas) ne doit pas empêcher l'application de se lancer sur la
-  machine d'un utilisateur.
+  machine d'un utilisateur.<br>
 • Un plugin Mongoose doit assurer la remontée des erreurs issues de la base
-  de données.
+  de données.<br>
 • Les versions les plus récentes des logiciels sont utilisées avec des correctifs
-  de sécurité actualisés.
-• Le contenu du dossier images ne doit pas être téléchargé sur GitHub.
+  de sécurité actualisés.<br>
+• Le contenu du dossier images ne doit pas être téléchargé sur GitHub.<br>
 
 
 <h2><u>Utilisation du projet</u></h2>
 
 <h3>Connexion à MongoDB:</h3>
 Sur le cloud de MondoDB, créer un nouveau projet. Pour ce dernier créer également un Cluster, créer un utilisateur d'accès  ainsi que les droits d'accès IP (0.0.0.0 pour un accès depuis n'importe quel poste) puis copier le lien mongodb+srv:// d'affiliation.
-Dans le fichier .env du code, coller l'entièreté du lien à la variable <em>URL_DB_CONNECT</em>. La ligne devrait ressembler à ceci:<br> <em>URL_DB_CONNECT = mongodb+srv://idCluster:passwordCluster@p6oc.1jn1loe.mongodb.net/?retryWrites=true&w=majority</em> <br> Remplacer les parties idCluster et passwordCluster par les identifiants créés précédemment.
-$ `\textcolor{ yellow }{ \text{ idCluster } }`$
+Dans le fichier .env du code, coller l'entièreté du lien à la variable <em>URL_DB_CONNECT</em>. La ligne devrait ressembler à ceci:<br> <em>URL_DB_CONNECT = mongodb+srv://idCluster:passwordCluster@p6oc.1jn1loe.mongodb.net/?retryWrites=true&w=majority</em> <br> Remplacer les parties <div style="color:yellow">idCluster</div> et passwordCluster par les identifiants créés précédemment.
+
 
 <h3>Démarrage du frontend:</h3>
 Depuis le code, ouvrir un nouveau terminal, se rendre dans le dossier frontend avec <em>cd frontend</em> puis lancer le ng serve avec la commande <em>npm start</em> enregistrée dans le fichier package.json du frontend <br>
