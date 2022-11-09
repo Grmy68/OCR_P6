@@ -39,40 +39,40 @@ leurs sauces préférées et liker ou disliker les sauces ajoutées par les autr
 
 <h3>Connexion à MongoDB:</h3>
 Sur le cloud de MondoDB, créer un nouveau projet. Pour ce dernier créer également un Cluster, créer un utilisateur d'accès  ainsi que les droits d'accès IP (0.0.0.0 pour un accès depuis n'importe quel poste) puis copier le lien mongodb+srv:// d'affiliation.
-Dans le fichier .env du code, coller l'entièreté du lien à la variable <em>URL_DB_CONNECT</em>. La ligne devrait ressembler à ceci → <em><span style="color:#00E2FD">URL_DB_CONNECT = mongodb+srv://</span><span style="color:yellow">idCluster</span>:<span style="color:yellow">passwordCluster</span><span style="color:#00E2FD">@p6oc.1jn1loe.mongodb.net/?retryWrites=true&w=majority</</span></em>. Remplacer les parties <span style="color:yellow">idCluster</span> et <span style="color:yellow">passwordCluster</span> par les identifiants créés précédemment.
+Dans le fichier .env du code, coller l'entièreté du lien à la variable <em>URL_DB_CONNECT</em>. La ligne devrait ressembler à ceci:<br> <em><span style="color:#00E2FD">URL_DB_CONNECT = mongodb+srv://</span><span style="color:yellow">idCluster</span>:<span style="color:yellow">passwordCluster</span><span style="color:#00E2FD">@p6oc.1jn1loe.mongodb.net/?retryWrites=true&w=majority</</span></em><br> Remplacer les parties <span style="color:yellow">idCluster</span> et <span style="color:yellow">passwordCluster</span> par les identifiants créés précédemment.
 
 <h3>Démarrage du frontend:</h3>
 Depuis le code, ouvrir un nouveau terminal, se rendre dans le dossier frontend avec <em>cd frontend</em> puis lancer le ng serve avec la commande <em>npm start</em> enregistrée dans le fichier package.json du frontend <br>
 Attendre la confirmation du terminal →<br>
-✔ Compiled successfully.
+✔ Compiled successfully.<br>
 ✔ Browser application bundle generation complete.<br><br>
 La partie frontend de l'application est maintenant démarrée
 
 <h3>Démarrage du backend:</h3>
 Depuis le code, ouvrir un nouveau terminal, se rendre dans le dossier backend avec <em>cd backend</em> puis lancer le nodemon server avec la commande <em>npm start</em> enregistrée dans le fichier package.json du backend <br>
 Attendre la confirmation du terminal →<br>
-[nodemon] starting `node server.js`
-Listening on port 3000
+[nodemon] starting `node server.js`<br>
+Listening on port 3000<br>
 Connexion à MongoDB réussie !<br><br>
-Si les identifiants son correct et qu'aucune erreur n'est à déclarer la partie frontend de l'application est maintenant démarrée !
+Si les identifiants son corrects et qu'aucune erreur n'est à déclarer la partie frontend de l'application est maintenant démarrée !
 
 <h3>Accéder à l'application web:</h3>
 Pour utiliser l'application ouvrir ce lien depuis un navigateur → http://localhost:4200/signup afin de pouvoir créer un compte et commencer l'utilisation de l'application.
 
 
 <h2><u>Conclusion</u></h2>
-• L'utilisateur peut créer un compte avec une adresse mail unique et y est automatiquement connecté
-• L'utilisateur peut se connecter à son compte créé au préalable
-• Le token de connexion expire au bout de 24 heures et utilise JsonWebToken
-• Le mot de passe est hashé 10 fois et utilise Bcrypt
-• Le code est protéger contre les injection grâce à la méthode CORS
-• L'utilisateur peut créer une ou plusieurs sauce(s) en complétant le formulaire entièrement
-• Si l'image est manquante, le frontend n'autorise pas la publication
-• Si un utilisateur arrive à valider le formulaire sans insérer d'image, l'application retourne error 401 Unauthorized et non  500 Internal Server (testé avec Postman)
-• L'utilisateur peut modifier ses propres publications (titre, description, image...etc) et non celles des autres
-• Les utilisateurs peuvent "liker" ou "disliker" leurs propres sauces ainsi que celles des autres
-• Les utilisateurs peuvent voir l'ensemble des publications
-• Le fichier dotenv masque le type de token et l'adresse de la DB
+• L'utilisateur peut créer un compte avec une adresse mail unique et y est automatiquement connecté<br>
+• L'utilisateur peut se connecter à son compte créé au préalable<br>
+• Le token de connexion expire au bout de 24 heures et utilise JsonWebToken<br>
+• Le mot de passe est hashé 10 fois et utilise Bcrypt<br>
+• Le code est protéger contre les injection grâce à la méthode CORS<br>
+• L'utilisateur peut créer une ou plusieurs sauce(s) en complétant le formulaire entièrement<br>
+• Si l'image est manquante, le frontend n'autorise pas la publication<br>
+• Si un utilisateur arrive à valider le formulaire sans insérer d'image, l'application retourne error 401 Unauthorized et non  500 Internal Server (testé avec Postman)<br>
+• L'utilisateur peut modifier ses propres publications (titre, description, image...etc) et non celles des autres<br>
+• Les utilisateurs peuvent "liker" ou "disliker" leurs propres sauces ainsi que celles des autres<br>
+• Les utilisateurs peuvent voir l'ensemble des publications<br>
+• Le fichier dotenv masque le type de token et l'adresse de la DB<br>
 
 
 
