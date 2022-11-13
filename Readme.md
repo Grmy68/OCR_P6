@@ -74,6 +74,7 @@ Pour utiliser l'application ouvrir ce lien depuis un navigateur → http://local
 • Les utilisateurs peuvent "liker" ou "disliker" leurs propres sauces ainsi que celles des autres<br>
 • Les utilisateurs peuvent voir l'ensemble des publications<br>
 • Le fichier dotenv masque le type de token et l'adresse de la DB<br>
+• Le dossier "images" du backend existe mais son contenu n'est pas versionné<br>
 
 
 
