@@ -1,12 +1,10 @@
 <h1>Construire une API sécurisée pour une application d'avis gastronomiques</h1>
 <b>Projet 6 de la formation Développeur Web - OpenClassrooms ↓</b><br><br><br>
 
-
-<div style="text-align:center"><img src="frontend/src/assets/images/piiquante-logo.png" alt="Logo Piiquante" width="600"/></div><br>
+<div style="text-align:center"><img src="backend/assets/piiquante-logo.png" alt="Logo Piiquante" width="600"/></div><br>
 
 <em><u>Lien vers le repo github du projet</u></em><br>
 https://github.com/Grmy68/OCR_P6
-
 
 <em>Création de l'API pour l'application web Piiquante</em>
 
@@ -17,7 +15,6 @@ Piiquante se dédie à la création de sauces épicées dont les recettes sont g
 secrètes. Pour tirer parti de son succès et générer davantage de buzz, l'entreprise
 souhaite créer une application web dans laquelle les utilisateurs peuvent ajouter
 leurs sauces préférées et liker ou disliker les sauces ajoutées par les autres.
-
 
 <h3>Exigences de sécurité:</h3>
 • Le mot de passe de l'utilisateur doit être haché.<br>
@@ -34,13 +31,14 @@ leurs sauces préférées et liker ou disliker les sauces ajoutées par les autr
   de sécurité actualisés.<br>
 • Le contenu du dossier images ne doit pas être téléchargé sur GitHub.<br>
 
-
 <h2><u>Utilisation du projet</u></h2>
+
+<h3>Avant de lancer le projet:</h3>
+Créer un nouveau projet node afin d'obtenir les dossiers "node_modules" pour le frontend et le backend. Insérer les dossiers "node_modules" dans le "frontend" et le "backend". Ces fichiers étant volumineux ils ne sont pas intégrer directement dans le ".zip".
 
 <h3>Connexion à MongoDB:</h3>
 Sur le cloud de MondoDB, créer un nouveau projet. Pour ce dernier créer également un Cluster, créer un utilisateur d'accès  ainsi que les droits d'accès IP (0.0.0.0 pour un accès depuis n'importe quel poste) puis copier le lien mongodb+srv:// d'affiliation.
 Dans le fichier .env du code, coller l'entièreté du lien à la variable <em>URL_DB_CONNECT</em>. La ligne devrait ressembler à ceci:<br> <em>URL_DB_CONNECT = mongodb+srv://idCluster:passwordCluster@p6oc.1jn1loe.mongodb.net/?retryWrites=true&w=majority</em> <br> Remplacer les parties "idCluster" et "passwordCluster" par les identifiants créés précédemment.
-
 
 <h3>Démarrage du frontend:</h3>
 Depuis le code, ouvrir un nouveau terminal, se rendre dans le dossier frontend avec <em>cd frontend</em> puis lancer le ng serve avec la commande <em>npm start</em> enregistrée dans le fichier package.json du frontend <br>
@@ -60,7 +58,6 @@ Si les identifiants son corrects et qu'aucune erreur n'est à déclarer la parti
 <h3>Accéder à l'application web:</h3>
 Pour utiliser l'application ouvrir ce lien depuis un navigateur → http://localhost:4200/signup afin de pouvoir créer un compte et commencer l'utilisation de l'application.
 
-
 <h2><u>Conclusion</u></h2>
 • L'utilisateur peut créer un compte avec une adresse mail unique et y est automatiquement connecté<br>
 • L'utilisateur peut se connecter à son compte créé au préalable<br>
@@ -75,10 +72,3 @@ Pour utiliser l'application ouvrir ce lien depuis un navigateur → http://local
 • Les utilisateurs peuvent voir l'ensemble des publications<br>
 • Le fichier dotenv masque le type de token et l'adresse de la DB<br>
 • Le dossier "images" du backend existe mais son contenu n'est pas versionné<br>
-
-
-
-
-
-
-

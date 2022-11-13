@@ -4,20 +4,6 @@ const Sauce = require('../models/Sauce'); //Import model Sauce
 
 exports.likeSauce = (req, res, next) => { //export this function to routes/sauces
 
-    //test confirm to sent
-    console.log("C'est liké !");
-
-    //test display req.body
-    console.log("-->CONTENU req.body - ctrl like");
-    console.log(req.body);
-
-    //test get id url
-    console.log("-->CONTENU req.params - ctrl like");
-    console.log(req.params);
-
-    //test format from id to _id
-    console.log("id --> _id");
-    console.log({ _id: req.params.id });
 
     //Search object in DB
     Sauce
