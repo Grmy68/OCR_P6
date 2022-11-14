@@ -8,6 +8,7 @@ const app = express();
 const path = require('path');
 require('dotenv').config();
 const morgan = require('morgan')
+// const rateLimit = require('express-rate-limit');
 
 morgan('dev')
 
@@ -40,6 +41,10 @@ app.use('/api/auth', userRoutes);
 app.use('/api/sauces', sauceRoutes);
 //Set images route in app with path.join
 app.use('/images', express.static(path.join(__dirname, 'images')));
+
+
+
+
 
 //Export app module (express) to server
 module.exports = app;

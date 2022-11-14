@@ -11,7 +11,6 @@ exports.likeSauce = (req, res, next) => { //export this function to routes/sauce
         .then((objectLiked) => {
 
             if(objectLiked.usersLiked.includes(req.body.userId)) { //check if userId is in array usersLiked ↓
-                console.log('test')
                 Sauce.updateOne(
                     { _id: req.params.id }, 
                     { $inc: { likes: -1 }, $pull: { usersLiked: req.body.userId } } //if present in usersLiked likes = -1 (from 1 to 0) and pull userId in array
